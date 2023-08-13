@@ -2,7 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program prints the size of various types
+ *              on the computer it is compiled and run on.
+ *
+ * Return: Always 0 (success)
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
