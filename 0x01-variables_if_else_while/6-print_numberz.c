@@ -10,13 +10,11 @@
  */
 int main(void)
 {
-	char digit;
+	int f;
 
-	for (digit = '0'; digit <= '9'; digit++)
-		putchar(digit);
-
+	for (f = '0'; f <= '9'; f++)
+	putchar(f);
 	putchar('\n');
 
 	return (0);
 }
-
