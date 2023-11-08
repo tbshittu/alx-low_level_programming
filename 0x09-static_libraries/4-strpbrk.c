@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _strpbrk - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (Success)
+ * Return: Pointer to the first occurrence of a
+ * character in 'accept' in 's', or '\0' if not found.
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -12,10 +14,12 @@ char *_strpbrk(char *s, char *accept)
 	while (*s)
 	{
 		for (k = 0; accept[k]; k++)
+		{
+			if (*s == accept[k])
 			{
-				if (*s == accept[k])
-					return (s);
+				return (s);
 			}
+		}
 		s++;
 	}
 	return ('\0');
